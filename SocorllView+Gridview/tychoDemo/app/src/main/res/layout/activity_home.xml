@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/sky_blue"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_back_selector"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@mipmap/home_page"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingLeft="0dp"
+            android:paddingTop="@dimen/dp_8"
+            android:text="@string/home_page"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/tab_found"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_back_selector"
+            android:button="@null"
+            android:drawableTop="@mipmap/found"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingLeft="0dp"
+            android:paddingTop="@dimen/dp_8"
+            android:text="@string/found"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/tab_classify"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_back_selector"
+            android:button="@null"
+            android:drawableTop="@mipmap/classify"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingLeft="0dp"
+            android:paddingTop="@dimen/dp_8"
+            android:text="@string/classify"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/tab_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_back_selector"
+            android:button="@null"
+            android:drawableTop="@mipmap/mine"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:paddingLeft="0dp"
+            android:text="@string/mine"
+            android:textColor="@color/white" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_8"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/grid_img"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@mipmap/found_one" />
+
+    <TextView
+        android:id="@+id/grid_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/dp_8"
+        android:text="咔哧鸡腿堡套餐"
+        android:textColor="@color/found_img_text_bg"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/grid_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_8"
+        android:text="@string/found_taste"
+        android:textColor="@color/red"
+        android:textSize="@dimen/sp_12" />
+</LinearLayout>
